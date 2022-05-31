@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>
+            About
+        </title>  
+        <link rel="icon" type="image/x-icon" href="favicon.jpg">
+        <link rel="stylesheet" type="text/css" href="timetable.css">
+    </head>
+<body background="books1.jpg ">
+    <header>
+        <!--for creating the navigation bar-->
+        <div class="container">
+            <nav>
+                <!--elements of navigation-->
+                <ul>
+                    <li><a href="index.html" style="text-decoration: none;">HOME</a></li>
+                    <li><a href="about.html" style="text-decoration:none;">About</a></li>
+                    <li><a href="education.html" style="text-decoration:none;">Educational Background</a></li>
+                    <li><a href="contact.html" style="text-decoration:none;">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <button class="accordion"> <h1><u><i>My TimeTable for AUTUMN 2021-22</i></u></h1></button>
+    <div class="panel">
+    <p><div id="timetable">
+        </div>
+        <img src="timetable.png" class="tt">
+        <div class="card">
+        <img src="yoga.jpg" alt="YOGA" style="width:100%">
+        <div class="container">
+        <p>Apart from these courses,i have been also alloted <b>NSO(HEALTH & FITNESS)</b> on <b>Wednesday</b>and
+            <b>Friday</b> from <b>1830-1930 hrs</b>.</p> 
+        </div>
+    </div></p>
+    </div>
+    <button class="accordion"><h1><u><i>My TimeTable for SPRING 2022</i></u></h1></button>
+    <div class="panel">
+    <p>Lorem ipsum...</p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
+      <div class="quote">
+        "The true sign of intelligence is not knowledge but imagination"  ~<cite>>ALBERT EINSTIEN</cite>
+    </div>
+</body>
+</html>
